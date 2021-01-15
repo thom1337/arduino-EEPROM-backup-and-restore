@@ -21,7 +21,7 @@ void loop() {
     Serial.print(eeprom_data[i]);
     Serial.println();
 
-    EEPROM.write(i, eeprom_data[i]);
+    EEPROM.update(i, eeprom_data[i]);
 
     delay(100);
   }
